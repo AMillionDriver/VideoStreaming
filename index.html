@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AxoMovie - Stream Your World</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- Google Fonts & Material Icons -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Orbitron:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <span class="material-icons">movie_filter</span>
+      AxoMovie
+    </div>
+    <form class="search-form" role="search">
+      <input type="text" placeholder="Search AxoMovie... 🔍" aria-label="Search">
+      <button type="submit"><span class="material-icons">search</span></button>
+    </form>
+    <div class="header-right">
+      <span class="material-icons" title="Upload">cloud_upload</span>
+      <span class="material-icons" title="Notifications">notifications</span>
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="User Avatar" class="user-avatar">
+      <span class="material-icons" title="Dark Mode Toggle">dark_mode</span>
+    </div>
+  </header>
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar" aria-label="Main navigation">
+    <ul>
+      <li><a href="#" class="active"><span class="material-icons">home</span><span class="sidebar-label">Home</span></a></li>
+      <li><a href="#"><span class="material-icons">local_fire_department</span><span class="sidebar-label">Trending</span></a></li>
+      <li><a href="#"><span class="material-icons">subscriptions</span><span class="sidebar-label">Subscriptions</span></a></li>
+      <li><a href="#"><span class="material-icons">playlist_play</span><span class="sidebar-label">Playlists</span></a></li>
+      <li><a href="#"><span class="material-icons">favorite</span><span class="sidebar-label">Favorites</span></a></li>
+      <li><hr></li>
+      <li><a href="#"><span class="material-icons">video_library</span><span class="sidebar-label">Library</span></a></li>
+      <li><a href="#"><span class="material-icons">history</span><span class="sidebar-label">History</span></a></li>
+      <li><a href="#"><span class="material-icons">watch_later</span><span class="sidebar-label">Watch Later</span></a></li>
+      <li><a href="#"><span class="material-icons">thumb_up</span><span class="sidebar-label">Liked Videos</span></a></li>
+      <li><hr></li>
+      <li><a href="#"><span class="material-icons">settings</span><span class="sidebar-label">Settings</span></a></li>
+      <li><a href="#"><span class="material-icons">help</span><span class="sidebar-label">Help</span></a></li>
+      <li><a href="#"><span class="material-icons">info</span><span class="sidebar-label">About</span></a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <button class="sidebar-toggle" title="Collapse Sidebar"><span class="material-icons">chevron_left</span></button>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main>
+    <!-- VIDEO PLAYER SECTION -->
+    <section class="video-player-section">
+      <video controls poster="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80">
+        <source src="assets/sample.mp4" type="video/mp4">
+        <source src="assets/sample.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <h1 class="video-title">The Rise of Axo - Official Movie Trailer</h1>
+      <div class="video-info">
+        <span>3,456,789 views • May 24, 2025</span>
+        <div class="video-actions">
+          <button aria-label="Like"><span class="material-icons">thumb_up</span> 8.5K</button>
+          <button aria-label="Dislike"><span class="material-icons">thumb_down</span></button>
+          <button aria-label="Share"><span class="material-icons">share</span> Share</button>
+          <button aria-label="Save"><span class="material-icons">playlist_add</span> Save</button>
+          <button aria-label="Download"><span class="material-icons">download</span></button>
+          <button aria-label="Report"><span class="material-icons">flag</span></button>
+        </div>
+      </div>
+      <div class="video-description">
+        <p>
+          Welcome to AxoMovie! Watch the official trailer for "The Rise of Axo", a thrilling new anime adventure.<br>
+          <strong>Story:</strong> Dive into a world where dreams and digital realms collide!<br>
+          <strong>Cast:</strong> Jane Axon, Leo Stream, Zoe Pixel<br>
+          <strong>Genre:</strong> Action, Sci-fi, Adventure<br>
+          <em>#AxoMovie #Anime #Trailer</em>
+        </p>
+        <details>
+          <summary>Show More</summary>
+          <ul>
+            <li>Release Year: 2025</li>
+            <li>Duration: 2h 17m</li>
+            <li>Language: English</li>
+            <li>Subtitles: English, Japanese, Spanish</li>
+          </ul>
+        </details>
+      </div>
+      <!-- Playlists Carousel -->
+      <section class="playlist-carousel" aria-label="Playlists">
+        <h3>Featured Playlists</h3>
+        <div class="carousel">
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Playlist 1">
+            <span>Cyberpunk Hits</span>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Playlist 2">
+            <span>Romance Anime</span>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=400&q=80" alt="Playlist 3">
+            <span>Mecha Legends</span>
+          </div>
+        </div>
+      </section>
+      <!-- Comments Section -->
+      <section class="comments-section" style="margin-top: 2em;">
+        <h2 style="color:#00f6ff;font-size:1.15em;margin-bottom:0.8em">Comments <span style="color:#aaa;font-size:0.9em">(3,245)</span></h2>
+        <form style="display:flex;gap:0.7em;margin-bottom:1em;">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="User Avatar" class="user-avatar" style="width:32px;height:32px;">
+          <input type="text" placeholder="Add a public comment..." style="flex:1;padding:0.8em;border-radius:20px;border:none;background:#232526;color:#eee;">
+          <button type="submit" style="background:#00f6ff;border:none;padding:0.6em 1.2em;border-radius:20px;color:#222;cursor:pointer;font-weight:600;">Comment</button>
+        </form>
+        <div>
+          <div style="display:flex;align-items:flex-start;gap:0.7em;margin-bottom:1.1em;">
+            <img src="https://randomuser.me/api/portraits/women/60.jpg" alt="User" class="user-avatar" style="width:32px;height:32px;">
+            <div>
+              <b style="color:#00f6ff;">AnimeFanGirl</b>
+              <span style="color:#aaa; font-size:0.9em;"> • 3 minutes ago</span>
+              <p style="margin:0.3em 0 0.6em 0;">This looks amazing! Can't wait for the release 🔥</p>
+              <button style="background:none;border:none;color:#aaa;cursor:pointer;"><span class="material-icons" style="font-size:1.1em;vertical-align:middle;">thumb_up</span> 12</button>
+              <button style="background:none;border:none;color:#aaa;cursor:pointer;"><span class="material-icons" style="font-size:1.1em;vertical-align:middle;">reply</span> Reply</button>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:0.7em;">
+            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="User" class="user-avatar" style="width:32px;height:32px;">
+            <div>
+              <b style="color:#00f6ff;">MovieGeek42</b>
+              <span style="color:#aaa; font-size:0.9em;"> • 10 minutes ago</span>
+              <p style="margin:0.3em 0 0.6em 0;">AxoMovie UI is so cool! Can we get a dark mode toggle in the next update?</p>
+              <button style="background:none;border:none;color:#aaa;cursor:pointer;"><span class="material-icons" style="font-size:1.1em;vertical-align:middle;">thumb_up</span> 6</button>
+              <button style="background:none;border:none;color:#aaa;cursor:pointer;"><span class="material-icons" style="font-size:1.1em;vertical-align:middle;">reply</span> Reply</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- VIDEO LIST / UP NEXT & LIVE CHAT -->
+    <aside class="video-list-section" aria-label="Up next">
+      <h2>Up next</h2>
+      <ul class="video-list">
+        <li>
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Anime Thumbnail 1">
+            <div class="video-meta">
+              <span class="video-list-title">The Last Pixel: Episode 1</span>
+              <span class="video-list-channel">Pixel Studios</span>
+              <span class="video-list-views">245K views • 1 day ago</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Anime Thumbnail 2">
+            <div class="video-meta">
+              <span class="video-list-title">Code Warriors S2 Trailer</span>
+              <span class="video-list-channel">Axo Originals</span>
+              <span class="video-list-views">1.3M views • 5 hours ago</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=400&q=80" alt="Anime Thumbnail 3">
+            <div class="video-meta">
+              <span class="video-list-title">Magic Byte: Opening</span>
+              <span class="video-list-channel">MagicBit</span>
+              <span class="video-list-views">921K views • 2 days ago</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Anime Thumbnail 4">
+            <div class="video-meta">
+              <span class="video-list-title">Neon City Nights</span>
+              <span class="video-list-channel">CyberWave</span>
+              <span class="video-list-views">774K views • 6 hours ago</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <!-- Live Chat (fun addition) -->
+      <section class="live-chat-section" aria-label="Live Chat">
+        <h3><span class="material-icons" style="vertical-align:middle;color:#ff5252;">chat</span> Live Chat</h3>
+        <div class="live-chat-window" style="background:#232526;padding:0.7em 1em;border-radius:8px;max-height:180px;overflow-y:auto;">
+          <div><b style="color:#00f6ff;">ModBot:</b> Welcome to Live Chat! Please be respectful.</div>
+          <div><b style="color:#88d4fd;">Viewer123:</b> Who else is watching this live? 🙋‍♂️</div>
+          <div><b style="color:#fff200;">AnimeQueen:</b> This is so cool! AxoMovie is the best! 🎬</div>
+          <div><b style="color:#ff5252;">PixelGuy:</b> Cyberpunk Hits playlist is fire 🔥</div>
+        </div>
+        <form style="display:flex;gap:0.5em;margin-top:0.7em;">
+          <input type="text" placeholder="Type your message..." style="flex:1;padding:0.5em;border-radius:20px;border:none;">
+          <button type="submit" style="background:#00f6ff;border:none;padding:0.5em 1em;border-radius:20px;color:#222;cursor:pointer;font-weight:600;">Send</button>
+        </form>
+      </section>
+    </aside>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 AxoMovie. All rights reserved.<br>
+    <span>Made with <span class="material-icons" style="color:#ff5252;vertical-align:middle;">favorite</span> by movie lovers, for movie lovers.</span>
+    <div class="footer-socials">
+      <a href="#" title="Twitter"><span class="material-icons">alternate_email</span></a>
+      <a href="#" title="Instagram"><span class="material-icons">photo_camera</span></a>
+      <a href="#" title="Discord"><span class="material-icons">forum</span></a>
+      <a href="#" title="GitHub"><span class="material-icons">code</span></a>
+    </div>
+    <div class="footer-links" style="margin-top:0.8em;">
+      <a href="#">Terms of Service</a> • 
+      <a href="#">Privacy Policy</a> • 
+      <a href="#">Contact</a>
+    </div>
+    <button id="floatingAxo" title="AxoMovie Surprise!">
+  <span class="material-icons">smart_toy</span>
+</button>
+  </footer>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
